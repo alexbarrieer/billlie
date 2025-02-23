@@ -24,9 +24,10 @@ const limiter = rateLimit({
 app.use("/chat", limiter);
 
 app.post("/chat", async (req, res) => {
+  const { messages } = req.body;
+  console.log("messages", messages);
   try {
-    const { messages } = req.body;
-    console.log("messages", messages);
+
 
     if (!Array.isArray(messages)) {
       return res.status(400).json({ 
