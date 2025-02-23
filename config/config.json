@@ -1,0 +1,6 @@
+{
+   "botNicknameForReply": "Billie",
+   "tgMaxHistoryMessagesCount": 10,
+   "promptName": "Billie.json",
+   "enableForDomains": ["https://billie.xyz"]
+}
